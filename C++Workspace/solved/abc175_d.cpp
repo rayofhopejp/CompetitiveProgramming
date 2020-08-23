@@ -8,7 +8,7 @@
 #include<cstring>
 #include<map>
  
- 
+ //解説
 using namespace std;
 #define int long long int
 #define rep(i,n) for(int i=0;i<n;i++)

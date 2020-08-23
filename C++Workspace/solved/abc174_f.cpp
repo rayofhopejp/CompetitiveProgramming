@@ -19,6 +19,7 @@ using namespace std;
 #define mod 1000000007
 //#define mod 998244353
 
+//解説
 int N,Q;
 int c[500005];
 int mr[500005];//一番右にある色iの玉の添字
