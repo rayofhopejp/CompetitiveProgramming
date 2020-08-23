@@ -54,6 +54,7 @@ struct union_find{
     }
     int countClasses(){//破壊的
         int cnt=0;
+        rep(i,N)root(i);
         sort(parent,parent+N);
         rep(i,N-1){
             if(parent[i+1]!=parent[i])cnt++;
