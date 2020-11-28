@@ -19,6 +19,7 @@ using namespace std;
 #define mod 1000000007
 //#define mod 998244353
 
+//解説
 int N;
 int X[20],Y[20],Z[20];
 int caluculate_cost(int from,int to){

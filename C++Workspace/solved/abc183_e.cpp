@@ -19,6 +19,7 @@ using namespace std;
 #define mod 1000000007
 //#define mod 998244353
 
+//解説
 int H,W;
 char S[2000][2000];
 int X[2000][2000];//dp[i][j-1]+dp[i][j-2]+...
