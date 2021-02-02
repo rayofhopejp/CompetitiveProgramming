@@ -19,6 +19,7 @@ using namespace std;
 #define mod 1000000007
 //#define mod 998244353
 
+//解説
 int A,B,C;
 double dp[105][105][105];
 
