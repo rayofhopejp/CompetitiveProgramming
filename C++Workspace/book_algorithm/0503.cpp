@@ -44,6 +44,6 @@ signed main(){
     rep(i,W+1){
         if(dp[N][i])ans++;
     }
-    printf("%lld\n",ans);
+    printf("%.10lld\n",ans);
     return 0;
 }
