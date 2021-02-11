@@ -28,9 +28,11 @@ https://atcoder.jp/contests/arc037/tasks/arc037_c
 よってO($N\log N \log C$)で求まる。
 
 ## 6.6 
+https://atcoder.jp/contests/abc026/tasks/abc026_d
 二分探索（二分法）を用いることで簡単に解ける。単調性が崩れていても中間値の定理より解の一つは出せることに注意。（p.99）
 
 ## 6.7
+https://atcoder.jp/contests/abc107/tasks/arc101_b
 難しそうなので飛ばす
 
 ## メモ
