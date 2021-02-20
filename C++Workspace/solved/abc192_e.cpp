@@ -26,7 +26,7 @@ struct Edge{
     int cost;
 };
 vector<Edge> edges[100005];
-dist[100005];
+int dist[100005];
 signed main(){
     scanf("%lld %lld %lld %lld",&N,&M,&X,&Y);
     X--;Y--;
@@ -37,9 +37,9 @@ signed main(){
         a--;b--;
         Edge e;
         e.to=b;e.clock=k;e.cost=t;
-        edges[a].pb(b);
+        edges[a].pb(e);
         e.to=a;
-        edges[b].pb(a);
+        edges[b].pb(e);
     }
     //dijkstra
     priority_queue< pair<int,int> , vector< pair<int,int> >, greater< pair<int,int> > > que;
