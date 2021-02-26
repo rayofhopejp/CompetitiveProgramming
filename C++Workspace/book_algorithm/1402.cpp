@@ -18,7 +18,6 @@ using namespace std;
 #define mod 1000000007
 //#define mod 998244353
 
-//atcoder beginner contest 061 D
 struct Edge{
     int from;
     int to;
