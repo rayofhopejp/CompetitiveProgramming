@@ -63,14 +63,21 @@ signed main(){
     }
     //始点から終点に向かう経路の中にその負の閉路があるか？
     bool exits_negative_cycle_in_route=false;
+    bool negative[1005];
+    rep(v,N)negative[v]=false;
     rep(v,N){
         for(auto e:edges){
             //辺に対して緩和
-            if(dist[e.from]!=LLINF&&chmin(dist[e.to],dist[e.from]+e.cost)){
-                if(e.to==N-1)exits_negative_cycle_in_route=true;
+            if(dist[e.from]==LLINF)continue;
+            if(chmin(dist[e.to],dist[e.from]+e.cost)){
+                negative[e.to]=true;
             }
+            if(negative[e.from])negative[e.to]=true;
         }
-        if(exits_negative_cycle_in_route)break;
+        if(negative[N-1]){
+            exits_negative_cycle_in_route=true;
+            break;
+        }
     }
     if(exits_negative_cycle_in_route)printf("inf\n");
     else printf("%lld\n",-dist[N-1]);
