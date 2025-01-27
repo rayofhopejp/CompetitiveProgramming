@@ -18,7 +18,10 @@ using namespace std;
 #define mod 1000000007
 //#define mod 998244353
 
-int N;
+char S[10];
 signed main(){
-    scanf("%lld",&N);
+    scanf("%s",&S);
+    int x = S[0]-'0';
+    int y = S[2]-'0';
+    printf("%d\n",x*y);
 }

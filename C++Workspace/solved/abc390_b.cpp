@@ -19,6 +19,14 @@ using namespace std;
 //#define mod 998244353
 
 int N;
+long long int A[105];
 signed main(){
-    scanf("%lld",&N);
+    scanf("%d",&N);
+    rep(i,N){
+        scanf("%lld",&A[i]);
+        if(i>1&&A[i]*A[i-2]!=A[i-1]*A[i-1]){
+            printf("No\n");exit(0);
+        }
+    }
+    printf("Yes\n");
 }

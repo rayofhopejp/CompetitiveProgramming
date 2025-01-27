@@ -10,6 +10,7 @@
  
  
 using namespace std;
+#define int long long int
 #define rep(i,n) for(int i=0;i<n;i++)
 #define INF 1001001001
 #define LLINF 1001001001001001001
@@ -18,7 +19,14 @@ using namespace std;
 #define mod 1000000007
 //#define mod 998244353
 
-int N;
+int X,Y;
 signed main(){
-    scanf("%lld",&N);
+    scanf("%lld %lld",&X,&Y);
+    int now=X;
+    int ans=0;
+    while(now<=Y){
+        now*=2;
+        ans++;
+    }
+    printf("%lld\n",ans);
 }

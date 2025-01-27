@@ -19,6 +19,7 @@ using namespace std;
 //#define mod 998244353
 
 int N;
+int A[200005];
 signed main(){
-    scanf("%lld",&N);
+    scanf("%d",&N);
 }
